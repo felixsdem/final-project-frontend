@@ -1,0 +1,21 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card__image {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-card__title {
+  margin: 16px 0 8px;
+}
+
+.movie-card__date,
+.movie-card__rating,
+.movie-card__description {
+  margin: 0 0 8px;
+}
