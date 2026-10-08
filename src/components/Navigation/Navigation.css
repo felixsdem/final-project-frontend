@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navigation__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  text-decoration: underline;
+}
