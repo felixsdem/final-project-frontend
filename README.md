@@ -1,16 +1,40 @@
-# React + Vite
+# Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movie Explorer es una aplicación web desarrollada con React que permite explorar películas utilizando la API de TMDB.
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Ver Movie Explorer](https://movie-explorer-felix.netlify.app/)
 
-## React Compiler
+## Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Exploración de películas mediante la API de TMDB.
+- Visualización de póster, título, fecha de estreno, puntuación y descripción.
+- Estado de carga mientras se obtiene la información.
+- Mensaje de error si la solicitud a la API falla.
+- Mensaje cuando no se encuentran resultados.
+- Botón "Mostrar más" para mostrar las películas progresivamente.
+- Navegación entre diferentes páginas mediante React Router.
+- Diseño responsive.
 
-## Expanding the ESLint configuration
+## Tecnologías
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript
+- Vite
+- React Router
+- CSS
+- TMDB API
+
+## Páginas
+
+- `/` — Inicio
+- `/peliculas` — Exploración de películas
+- `/sobre-el-proyecto` — Información del proyecto
+
+## Instalación
+
+Clona el repositorio e instala las dependencias:
+
+```bash
+npm install
