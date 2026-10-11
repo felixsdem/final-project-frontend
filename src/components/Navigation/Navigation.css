@@ -1,0 +1,34 @@
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+  min-width: 0;
+}
+
+.navigation__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  text-decoration: underline;
+}
+
+.navigation__link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    width: 100%;
+    gap: 12px 16px;
+  }
+
+  .navigation__link {
+    text-align: center;
+  }
+}
