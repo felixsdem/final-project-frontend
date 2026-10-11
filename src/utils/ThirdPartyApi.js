@@ -19,3 +19,21 @@ export function getMovies(page = 1) {
     return response.json()
   })
 }
+
+export function searchMovies(query, page = 1) {
+  return fetch(
+    `${BASE_URL}/search/movie?query=${encodeURIComponent(query)}&language=es-ES&page=${page}`,
+    {
+      headers: {
+        Authorization: `Bearer ${TOKEN}`,
+        accept: 'application/json',
+      },
+    },
+  ).then((response) => {
+    if (!response.ok) {
+      throw new Error('Error en la solicitud')
+    }
+
+    return response.json()
+  })
+}

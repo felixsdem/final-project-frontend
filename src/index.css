@@ -1,5 +1,14 @@
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   color: #000;
   background-color: #fff;
   font-synthesis: none;
